@@ -44,11 +44,11 @@ Two binary trees are considered the same if they are structurally identical, and
 **Example 1**
 ```mermaid
 graph BR;
-    subgraph First
+    subgraph Q
     A((1))-->B((2))
     A-->C((3))
     end
-    subgraph Second
+    subgraph P
     AA((1))-->BB((2))
     AA-->CC((3))
     end  
@@ -59,11 +59,11 @@ Expected result: True.
 **Example 2**
 ```mermaid
 graph BR;
-    subgraph First
+    subgraph Q
     A((1))-->B((3))
     A-->C((2))
     end
-    subgraph Second
+    subgraph P
     AA((1))-->BB((2))
     AA-->CC((3))
     end  
@@ -74,13 +74,13 @@ Expected result: False.
 **Example 3**
 ```mermaid
 graph BR;
-    subgraph First
+    subgraph Q
     A((1))-->B((3))
     A-->C((2))
     C-->D((5))
     C-->F((None))
     end
-    subgraph Second
+    subgraph P
     AA((1))-->BB((3))
     AA-->CC((2))
     end  
