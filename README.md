@@ -2,7 +2,7 @@
 
 Set of programming assignments that are designed to test knowledge of traversal methods for binary trees.
 
-### Data structure for representing binary trees
+### Basic data structure for representing binary trees
 
 You may assume that for all programming assignments within this problem set the following data class
 will be used to represent tree nodes:
@@ -20,6 +20,8 @@ class TreeNone:
         self.right = right
 ```
 
+The implementation above can be found within `tasks/binary_tree_node.py` file.
+
 For example the following tree could be created using the snippet below:
 
 
@@ -35,7 +37,7 @@ c = TreeNode(value=9)
 a = TreeNode(value=2, left=b, right=c)
 ```
 
-## Check whether two trees are the same
+## Problem 1: Check whether two trees are the same
 
 Given the roots of two binary trees `p` and `q`, write a function to check if they are the same or not.
 
@@ -87,3 +89,5 @@ graph BR;
 ```
 
 Expected result: False.
+
+Please use a template for the implementation (`tasks/binary_tree_comparison:check_trees_equality`).
