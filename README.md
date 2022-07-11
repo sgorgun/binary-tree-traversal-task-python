@@ -23,9 +23,9 @@ class TreeNone:
 For example the following tree could be created using the snippet below:
 
 ```mermaid
-graph Sample tree;
-  A(4) --> B(12);
-  A(4) --> C(10);
+graph SampleTree;
+  A-->B;
+  A-->C;
 ```
 
 
