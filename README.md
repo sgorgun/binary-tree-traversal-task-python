@@ -25,8 +25,14 @@ For example the following tree could be created using the snippet below:
 
 ```mermaid
 graph TD;
-    A-->B;
-    A-->C;
+    A[2]-->B[4];
+    A-->C[9];
+```
+
+```python
+b = TreeNode(value=4)
+c = TreeNode(value=9)
+a = TreeNode(value=2, left=b, right=c)
 ```
 
 
