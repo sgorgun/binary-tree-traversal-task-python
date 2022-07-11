@@ -35,7 +35,55 @@ c = TreeNode(value=9)
 a = TreeNode(value=2, left=b, right=c)
 ```
 
+## Check whether two trees are the same
 
-Please use a template for the implementation (`tasks/numbers_and_math.py:get_function_value_in_point`).
+Given the roots of two binary trees `p` and `q`, write a function to check if they are the same or not.
 
-Please use a template for the implementation (`tasks/str_operations.py:crack_cipher`).
+Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.
+
+**Example 1**
+```mermaid
+graph BR;
+    subgraph A
+    A((1))-->B((2))
+    A-->C((3))
+    end
+    subgraph A
+    AA((1))-->BB((2))
+    AA-->CC((3))
+    end  
+```
+
+Expected result: True.
+
+**Example 2**
+```mermaid
+graph BR;
+    subgraph A
+    A((1))-->B((3))
+    A-->C((2))
+    end
+    subgraph A
+    AA((1))-->BB((2))
+    AA-->CC((3))
+    end  
+```
+
+Expected result: False.
+
+**Example 3**
+```mermaid
+graph BR;
+    subgraph A
+    A((1))-->B((3))
+    A-->C((2))
+    C-->D((5))
+    C-->F((None))
+    end
+    subgraph A
+    AA((1))-->BB((3))
+    AA-->CC((2))
+    end  
+```
+
+Expected result: False.
