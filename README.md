@@ -43,7 +43,7 @@ Given the roots of two binary trees `p` and `q`, write a function to check if th
 
 Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.
 
-**Example 1**
+**Example 1:**
 ```mermaid
 graph BR;
     subgraph Q
@@ -58,7 +58,7 @@ graph BR;
 
 Expected result: True.
 
-**Example 2**
+**Example 2:**
 ```mermaid
 graph BR;
     subgraph Q
@@ -73,7 +73,7 @@ graph BR;
 
 Expected result: False.
 
-**Example 3**
+**Example 3:**
 ```mermaid
 graph BR;
     subgraph Q
@@ -91,3 +91,83 @@ graph BR;
 Expected result: False.
 
 Please use a template for the implementation (`tasks/binary_tree_comparison:check_trees_equality`).
+
+
+## Problem 2: Get inorder traversal of binary tree
+
+Given the `root` of a binary tree, return the inorder traversal of its nodes' values.
+
+**Example:**
+```mermaid
+graph BR;
+    A((20))-->B((13))
+    A-->C((7))
+    B-->D((2))
+    B-->E((14))
+    C-->F((12))
+    C-->G((None))
+```
+
+Expected result: [2, 13, 14, 20, 12, 7].
+
+Please use a template for the implementation (`tasks/binary_tree_traversal:get_inorder_traversal`).
+
+
+## Problem 3: Get postorder traversal of binary tree
+
+Given the `root` of a binary tree, return the postorder traversal of its nodes' values.
+
+**Example:**
+```mermaid
+graph BR;
+    A((20))-->B((13))
+    A-->C((7))
+    B-->D((2))
+    B-->E((14))
+    C-->F((12))
+    C-->G((None))
+```
+
+Expected result: [2, 14, 13, 12, 7, 20].
+
+Please use a template for the implementation (`tasks/binary_tree_traversal:get_postorder_traversal`).
+
+
+## Problem 4: Get preorder traversal of binary tree
+
+Given the `root` of a binary tree, return the preorder traversal of its nodes' values.
+
+**Example:**
+```mermaid
+graph BR;
+    A((20))-->B((13))
+    A-->C((7))
+    B-->D((2))
+    B-->E((14))
+    C-->F((12))
+    C-->G((None))
+```
+
+Expected result: [20, 13, 2, 14, 7, 12].
+
+Please use a template for the implementation (`tasks/binary_tree_traversal:get_preorder_traversal`).
+
+
+## Problem 5: Get level order traversal of binary tree
+
+Given the `root` of a binary tree, return the level order traversal of its nodes' values. (i.e., from left to right, level by level).
+
+**Example:**
+```mermaid
+graph BR;
+    A((20))-->B((13))
+    A-->C((7))
+    B-->D((2))
+    B-->E((14))
+    C-->F((12))
+    C-->G((None))
+```
+
+Expected result: [20, 13, 7, 2, 14, 12].
+
+Please use a template for the implementation (`tasks/binary_tree_traversal:get_level_order_traversal`).
