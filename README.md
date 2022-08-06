@@ -1,5 +1,4 @@
-# binary-tree-traversal--task--python
-
+# Binary Tree Traversal
 Set of programming assignments that are designed to test knowledge of traversal methods for binary trees.
 
 ### Basic data structure for representing binary trees
