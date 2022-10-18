@@ -1,10 +1,25 @@
 # Binary Tree Traversal
-Set of programming assignments that are designed to test knowledge of traversal methods for binary trees.
+
+## Purpose
+
+The coding exercises are designed to test knowledge of the following concepts:
+* Binary tree
+* Binary tree traversals (inorder, postorder, preorder, level order)
+
+## Overview
+
+The coding exercises cover the following practical problems:
+* Checking whether two binary trees are identical
+* Getting the inorder traversal for a given binary tree
+* Getting the postorder traversal for a given binary tree
+* Getting the preorder traversal for a given binary tree
+* Getting the level order traversal for a given binary tree
+
+## Coding exercises
 
 ### Basic data structure for representing binary trees
 
-You may assume that for all programming assignments within this problem set the following data class
-will be used to represent tree nodes:
+You may assume that for all coding exercises the following data class will be used to represent tree nodes:
 
 ```python
 class TreeNone:
@@ -36,7 +51,7 @@ c = TreeNode(value=9)
 a = TreeNode(value=2, left=b, right=c)
 ```
 
-## Problem 1: Check whether two trees are the same
+### Exercise 1: Check whether two trees are the same
 
 Given the roots of two binary trees `p` and `q`, write a function to check if they are the same or not.
 
@@ -89,10 +104,11 @@ graph BR;
 
 Expected result: False.
 
+<br>
+
 Please use a template for the implementation (`tasks/binary_tree_comparison:check_trees_equality`).
 
-
-## Problem 2: Get inorder traversal of binary tree
+### Exercise 2: Get inorder traversal of binary tree
 
 Given the `root` of a binary tree, return the inorder traversal of its nodes' values.
 
@@ -109,10 +125,11 @@ graph BR;
 
 Expected result: [2, 13, 14, 20, 12, 7].
 
+<br>
+
 Please use a template for the implementation (`tasks/binary_tree_traversal:get_inorder_traversal`).
 
-
-## Problem 3: Get postorder traversal of binary tree
+### Exercise 3: Get postorder traversal of binary tree
 
 Given the `root` of a binary tree, return the postorder traversal of its nodes' values.
 
@@ -129,10 +146,11 @@ graph BR;
 
 Expected result: [2, 14, 13, 12, 7, 20].
 
+<br>
+
 Please use a template for the implementation (`tasks/binary_tree_traversal:get_postorder_traversal`).
 
-
-## Problem 4: Get preorder traversal of binary tree
+### Exercise 4: Get preorder traversal of binary tree
 
 Given the `root` of a binary tree, return the preorder traversal of its nodes' values.
 
@@ -149,10 +167,11 @@ graph BR;
 
 Expected result: [20, 13, 2, 14, 7, 12].
 
+<br>
+
 Please use a template for the implementation (`tasks/binary_tree_traversal:get_preorder_traversal`).
 
-
-## Problem 5: Get level order traversal of binary tree
+### Exercise 5: Get level order traversal of binary tree
 
 Given the `root` of a binary tree, return the level order traversal of its nodes' values. (i.e., from left to right, level by level).
 
@@ -168,5 +187,7 @@ graph BR;
 ```
 
 Expected result: [20, 13, 7, 2, 14, 12].
+
+<br>
 
 Please use a template for the implementation (`tasks/binary_tree_traversal:get_level_order_traversal`).

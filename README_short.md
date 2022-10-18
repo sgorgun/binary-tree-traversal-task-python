@@ -1,29 +1,16 @@
 # Binary Tree Traversal
-Set of programming assignments that are designed to test knowledge of traversal methods for binary trees.
 
+## Purpose
 
-## Problem 1: Check whether two trees are the same
+The coding exercises are designed to test knowledge of the following concepts:
+* Binary tree
+* Binary tree traversals (inorder, postorder, preorder, level order)
 
-Given the roots of two binary trees `p` and `q`, write a function to check if they are the same or not.
+## Overview
 
-Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.
-
-
-## Problem 2: Get inorder traversal of binary tree
-
-Given the `root` of a binary tree, return the inorder traversal of its nodes' values.
-
-
-## Problem 3: Get postorder traversal of binary tree
-
-Given the `root` of a binary tree, return the postorder traversal of its nodes' values.
-
-
-## Problem 4: Get preorder traversal of binary tree
-
-Given the `root` of a binary tree, return the preorder traversal of its nodes' values.
-
-
-## Problem 5: Get level order traversal of binary tree
-
-Given the `root` of a binary tree, return the level order traversal of its nodes' values. (i.e., from left to right, level by level).
+The coding exercises cover the following practical problems:
+* Checking whether two binary trees are identical
+* Getting the inorder traversal for a given binary tree
+* Getting the postorder traversal for a given binary tree
+* Getting the preorder traversal for a given binary tree
+* Getting the level order traversal for a given binary tree
