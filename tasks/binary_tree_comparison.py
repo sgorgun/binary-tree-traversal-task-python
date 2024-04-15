@@ -18,4 +18,13 @@ def check_trees_equality(p_tree: Optional[TreeNode], q_tree: Optional[TreeNode])
     Returns:
         Boolean, whether given trees are equal.
     """
-    pass
+    if p_tree is None and q_tree is None:
+        return True
+
+    if p_tree is None or q_tree is None:
+        return False
+
+    return (p_tree.value == q_tree.value
+            and check_trees_equality(p_tree.left, q_tree.left)
+            and check_trees_equality(p_tree.right, q_tree.right))
+    

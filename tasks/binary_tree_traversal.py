@@ -38,7 +38,22 @@ def get_preorder_traversal(root: Optional[TreeNode]) -> List[int]:
     Returns:
         List with numbers that correspond to preorder nodes traversal.
     """
-    pass
+    if root is None:
+        return []
+
+    result = []
+    stack = [root]
+
+    while stack:
+        node = stack.pop()
+        result.append(node.value)
+
+        if node.right:
+            stack.append(node.right)
+        if node.left:
+            stack.append(node.left)
+
+    return result
 
 
 def get_level_order_traversal(root: Optional[TreeNode]) -> List[int]:
@@ -50,4 +65,20 @@ def get_level_order_traversal(root: Optional[TreeNode]) -> List[int]:
     Returns:
         List with numbers that correspond to level order nodes traversal.
     """
-    pass
+    if root is None:
+        return []
+    
+    result = []
+    queue = [root]
+    
+    while queue:
+        node = queue.pop(0)
+        result.append(node.value)
+        
+        if node.left:
+            queue.append(node.left)
+        if node.right:
+            queue.append(node.right)
+            
+    return result
+
